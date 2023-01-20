@@ -1,0 +1,75 @@
+name: Build-and-Deploy-react-s3
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - development
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Check AWS CLI version
+        run: aws --version
+        
+      - name: Checkout code from repository
+        uses: actions/checkout@v3
+      
+      - name: List files in the directory
+        run: ls -lta $GITHUB_WORKSPACE
+        
+      # - name: Install Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: latest
+
+      # - name: Install dependencies
+      #   run: npm install
+      # - name : configure api endpoint
+      #   run : |
+      #     echo "REACT_APP_NOT_SECRET_CODE=${{secrets.API_ENDPOINT}}" >> .env
+
+      # - name: Make script executable
+      #   run : chmod +x $GITHUB_WORKSPACE/.github/workflows/script.sh
+
+      # - name: Run script
+      #   run: bash $GITHUB_WORKSPACE/.github/workflows/script.sh
+
+      # - name: View package.json
+      #   run : cat package.json 
+
+      # - name: Build React application
+      #   run : npm run build
+      #   continue-on-error: true
+        
+
+      - name: List files in the directory
+        if: always()
+        run: ls -lta
+      
+      # - name : configure api endpoint
+      #   run : |
+      #     cd $GITHUB_WORKSPACE/build
+      #     echo "REACT_APP_NOT_SECRET_CODE=${{secrets.API_ENDPOINT}}" >> .env
+
+      # - name: List files in the directory
+      #   if: always()
+      #   run: ls -lta $GITHUB_WORKSPACE/build
+      #   continue-on-error: true
+
+      # - run : cat $GITHUB_WORKSPACE/build/.env
+      - name: Configure AWS access key
+        run : aws configure set aws_access_key_id AKIASXZRZQF3NVV4NIH7
+
+      - name: Configure AWS secret key
+        run : aws configure set aws_secret_access_key MuB5golorhO5S8tjNqyuj+a6uGSPR2D5+JeWzjDS
+
+      - name: Configure AWS region
+        run : aws configure set region me-south-1
+
+      - name: List AWS configuration
+        run : aws configure list
+
+      # - name: Deploy to S3 bucket
+      #   run : aws s3 sync $GITHUB_WORKSPACE/build s3://cicd-popup-push-frontend --delete
