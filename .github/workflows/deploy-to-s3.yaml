@@ -72,5 +72,5 @@ jobs:
         run : aws configure list
 
       - name: Deploy to S3 bucket
-        run : aws s3 sync $GITHUB_WORKSPACE s3://babaarabi --delete
+        run : aws s3 sync $GITHUB_WORKSPACE/files s3://babaarabi --delete
 
