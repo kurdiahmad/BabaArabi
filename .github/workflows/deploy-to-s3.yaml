@@ -71,5 +71,6 @@ jobs:
       - name: List AWS configuration
         run : aws configure list
 
-      # - name: Deploy to S3 bucket
-      #   run : aws s3 sync $GITHUB_WORKSPACE/build s3://cicd-popup-push-frontend --delete
+      - name: Deploy to S3 bucket
+        run : aws s3 sync $GITHUB_WORKSPACE s3://babaarabi --delete
+
