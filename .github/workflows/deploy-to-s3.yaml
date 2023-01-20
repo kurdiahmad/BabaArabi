@@ -60,10 +60,10 @@ jobs:
 
       # - run : cat $GITHUB_WORKSPACE/build/.env
       - name: Configure AWS access key
-        run : aws configure set aws_access_key_id ${{secret.AWS_ACCESS_KEY_ID}}
+        run : aws configure set aws_access_key_id ${{secrets.AWS_ACCESS_KEY_ID}}
 
       - name: Configure AWS secret key
-        run : aws configure set aws_secret_access_key ${{secret.AWS_SECRET_ACCESS_KEY}}
+        run : aws configure set aws_secret_access_key ${{secrets.AWS_SECRET_ACCESS_KEY}}
 
       - name: Configure AWS region
         run : aws configure set region me-south-1
