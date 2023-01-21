@@ -11,10 +11,6 @@ function App() {
 
   return (
     <div>
-
-
-
-
         {/* <!-- Navigation--> */}
         <Navigation/>
         {/* <!-- Header--> */}
@@ -27,11 +23,6 @@ function App() {
         <Contact/>
         {/* <!-- Footer--> */}
         <Footer/>
-
-
-
-
-
     </div>
   );
 }
