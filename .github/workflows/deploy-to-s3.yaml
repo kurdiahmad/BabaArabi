@@ -19,13 +19,13 @@ jobs:
       - name: List files in the directory
         run: ls -lta $GITHUB_WORKSPACE
         
-      # - name: Install Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: latest
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
 
-      # - name: Install dependencies
-      #   run: npm install
+      - name: Install dependencies
+        run: npm install
       # - name : configure api endpoint
       #   run : |
       #     echo "REACT_APP_NOT_SECRET_CODE=${{secrets.API_ENDPOINT}}" >> .env
@@ -39,9 +39,9 @@ jobs:
       # - name: View package.json
       #   run : cat package.json 
 
-      # - name: Build React application
-      #   run : npm run build
-      #   continue-on-error: true
+      - name: Build React application
+        run : npm run build
+#         continue-on-error: true
         
 
       - name: List files in the directory
@@ -72,5 +72,5 @@ jobs:
         run : aws configure list
 
       - name: Deploy to S3 bucket
-        run : aws s3 sync $GITHUB_WORKSPACE/files s3://babaarabi --delete
+        run : aws s3 sync $GITHUB_WORKSPACE/build s3://babaarabi --delete
 
