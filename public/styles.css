@@ -7,6 +7,9 @@
       margin: 0;
       box-sizing: border-box;
     }
+    title{
+      font-family: 'Rakkas', cursive;
+    }
     html {
       font-family: 'Noto Sans Arabic','Tajawal','Almarai', sans-serif;
       font-size:100%;
