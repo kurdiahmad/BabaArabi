@@ -78,12 +78,24 @@ padding: 10px 0;
 
     }
 
-    .iconsUsername{
-      color: #8155BA;
-      font-weight: 500;
-      padding-left: 10px;
-    }
     .iconsSlash{
       font-size: 1.5rem;
       padding-left: 10px;
+    }
+
+    .iconsUsername{
+      display: inline-flex;
+      color: #8155BA;
+      font-weight: 500;
+      font-size: 1.7rem;
+      padding-left: 10px;
+      text-align: center;
+      animation:brath 4s  linear infinite;
+    }
+
+    @keyframes brath{
+      0%{transform: scale(.8);}
+      25%{transform: scale(1);}
+      60%{transform: scale(.8);}
+      100%{transform: scale(1);}
     }

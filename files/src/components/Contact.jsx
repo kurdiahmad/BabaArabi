@@ -8,9 +8,9 @@ function Contact() {
                 <div class="row gx-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2>تواصل معنا</h2>
-                        <p class="lead">بامكانكم التواصل معنا من خلال منصات التواصل الاجتماعي من خلال اسم المستخدم.</p>
+                        <p class="lead">بامكانكم التواصل معنا على منصات التواصل الاجتماعي من خلال اسم المستخدم الخاص بنا.</p>
                         <div class="contactIcons">
-                        <i class="iconsSlash"><span class="iconsUsername">BabaArabi</span>/</i>
+                        <i class="iconsSlash"><div class="iconsUsername" >BabaArabi</div>/</i>
     <i class="features-icon fab fa-facebook"></i>
     <i class="features-icon fab fa-twitter"></i>
     <i class="features-icon fab fa-instagram"></i>
