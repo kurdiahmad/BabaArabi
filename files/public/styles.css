@@ -1,242 +1,89 @@
+@import "./default.css";
+
+
 * {
-  scroll-behavior: smooth;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  html {
-    font-family: 'Noto Sans Arabic', sans-serif;
-    font-size:100%;
-    direction: rtl;
-  }
-  body {
-    background: #f1efe8;
-    padding: 0 16px;
-  }
-  
-  header {
-    font-family: 'Noto Sans Arabic', sans-serif;
-    background-color: #4056A1;
-    padding: 16px 32px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
-    margin: 0;
-    position: absolute;
-    width: 100%;
-    height: 10%;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-  }
-
-  header h1 {
-    color: #f1efe8;
-    font-weight: 600;
-
-  }
-
-  .headerContent{
-    display: flex;
-  }
-
-  .headerContent p {
-    color: #f1efe8;
-    font-weight: 200;
-    font-size: 1.3rem;
-  }
-
-  h2{
-margin: 0%;
-text-align: center;
-
-  }
-
-  p{
-    padding: 0 5% 5% 5%;
-  }
-  
-  
-
-  footer{
-    margin: auto;
-    padding: 5% 0;
-  }
-
-  
-  footer p {
-    color: #ccc;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .note {
-    background: #fff;
-    border-radius: 7px;
-    box-shadow: 0 2px 5px #ccc;
-    padding: 10px;
-    width: 60%;
-    margin: 16px;
-    float:right;
-  }
-  
-  
-  
-  .arabicFont {
-font-family: 'Noto Sans Arabic', sans-serif;
-  }
-
-
-  .essayBox{
-    
+    scroll-behavior: smooth;
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    html {
+      font-family: 'Noto Sans Arabic','Tajawal','Almarai', sans-serif;
+      font-size:100%;
+      direction: rtl;
+    }
+    body {
       background: #fff;
-      border-radius: 7px;
-      box-shadow: 0 2px 5px #ccc;
-      padding: 10px;
-      margin: 16px;
-      line-height: 1.8;
-      width: 55%;
-      border-radius: 50px;
-      position: absolute;
-      top: 20%;
-  
+    }
+
+    footer{
+      background-color: #8155BA ;
+
+    }
+
+    nav{
+      background-color: #8155BA ;
+    }
+
+    #contact{
+      margin: auto;
+      padding: 144px 0;      
+    }
+
+    #services{
+padding: 10px 0;
+    }
+
+    #about{
+      margin: auto;
+    }
+
+    #header{
+      width: 100%;
+      height: 100px;
+      background-color: #fff;
+      padding: 10px 0;
+      margin:0;
+
+
+    }
     
-  }
+    .navbar-brand{
+      font-size: 2.2rem;
+      font-family: 'Rakkas', cursive;
+    }
 
-  .essayHeading{
-padding: 2%;
+    .nav-link{
+      font-family: 'Almarai', sans-serif;
+      text-align: start;
+      color: #fff;
+      margin-left: 1%;
+      display: block;
+      border-radius: 10px;
+    }
 
-  }
+    .navItems{
+      display: flex;
+      white-space: nowrap;
+    }
 
-  .essayContents{
-    width: 90%;
-    position: relative;
-    right: 3%;
-    justify-content: end;
+    .contactIcons{
+      text-align: center;
+      padding-top: 50px;
+    }
 
-  }
-  .essayContents ul{
-    display: block;
-    direction: rtl;
-    float: right;
-    padding-right: 15%;
-    margin-left: 20%;
-    font-size: 1.3rem;
-  }
+    i{
+      font-size: 1.5rem;
+      padding-left: 4px;
 
-  .essayContents h2{
-    font-weight: 500;
-    font-size: 1.8rem;
-    padding-right:0%;
-    margin-right: 4%;
-  }
+    }
 
-  p span{
-    font-size: 25px;;
-  }
-
-  .essayHeading h1{
-    color: rgb(50, 50, 50);
-    margin-right: 6%;
-    font-size: 2.5rem;
-    margin-bottom: 0;
-    padding: 0 1%;
-    display: inline;
-    border-radius: 20px;
-  }
-
-  p{
-    margin-bottom: 7%;
-  }
-  li {
-    font-size: 1.5rem;
-    text-align: start;
-    list-style-type:none;
-    position: relative;    /* It's needed for setting position to absolute in the next rule. */
-}
-
-li::before {
-    
-    content: '•';
-    position: absolute;
-    top:-0.1em;
-    left:5em;          /* Adjust this value so that it appears where you want. */
-    font-size: 1.2em;      /* Adjust this value so that it appears what size you want. */
-}
-
-
-
-  .essayBody{
-    margin-top: 30%;
-  }
-
-  
-  a:link, a:visited, a:active{
-    text-decoration: none;
-  }
-
-  a:visited{
-    color: black;
-  }
-  
-  a:hover{
-    color: #66a4f5;
-  }
-
-  .center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid green;
-  }
-
-
-
-
-  /* .note button {
-    position: relative;
-    float: left;
-    margin-right: 10px;
-    color: #66a4f5;
-    border: none;
-    width: 50px;
-    height: 36px;
-    cursor: pointer;
-    outline: none;
-    font-size: medium;
-  }
-  
-  form {
-    position: relative;
-    width: 480px;
-    margin: 30px auto 20px auto;
-    background: #fff;
-    padding: 15px;
-    border-radius: 7px;
-    box-shadow: 0 1px 5px rgb(138, 137, 137);
-  }
-  form input,
-  form textarea {
-    width: 100%;
-    border: none;
-    padding: 4px;
-    outline: none;
-    font-size: 1.2em;
-    font-family: inherit;
-    resize: none;
-  }
-  form input{
-    font-weight: bold;
-  }
-  form button {
-    font-size: 2rem;
-    position: absolute;
-    right: 18px;
-    bottom: -18px;
-    background: #66a4f5;
-    color: #fff;
-    border: none;
-    border-radius: 50%;
-    width: 36px;
-    height: 36px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    cursor: pointer;
-    outline: none;
-  } */
+    .iconsUsername{
+      color: #8155BA;
+      font-weight: 500;
+      padding-left: 10px;
+    }
+    .iconsSlash{
+      font-size: 1.5rem;
+      padding-left: 10px;
+    }
