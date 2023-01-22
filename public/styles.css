@@ -42,7 +42,22 @@
 
     }
     header div p {
-      font-size: 1.5rem !important;
+      font-size: 1.3rem !important;
+      padding-top: 5px;
+      padding-right: 2%;
+    }
+
+    .handp {
+      display: flex;
+      justify-content: center;
+    }
+    .googleBox{
+      margin: auto;
+      width: 60%;
+      padding: 4px;
+      background-color: #fff;
+      border-radius: 10px;
+      border: 3px solid lightblue;
     }
 
     /* About section */
@@ -50,10 +65,7 @@
       margin: auto;
     }
 
-     .gcse-search{
-      width: 10px;
-      border-radius: 10px;
-    }
+
 
      /* Navigation section and navBAR */
      nav{
@@ -107,7 +119,7 @@
       font-size: 1.7rem;
       padding-left: 10px;
       text-align: center;
-      animation:brath 8s  linear infinite;
+      animation:brath 10s  linear infinite;
     }
 
     @keyframes brath{
@@ -123,3 +135,11 @@
     }    
 
     
+
+
+    @media (max-width: 900px) {
+      .handp {
+        display: flex;
+        flex-direction: column;
+      }
+  }
