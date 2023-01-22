@@ -39,12 +39,15 @@
 
     header h1{
       font-family: 'Almarai', sans-serif;
+      opacity: 0.9;
+
 
     }
     header div p {
       font-size: 1.3rem !important;
       padding-top: 5px;
       padding-right: 2%;
+      opacity: 0.7;
     }
 
     .handp {
@@ -53,12 +56,12 @@
     }
     .googleBox{
       margin: auto;
-      width: 60%;
+      width: 50%;
       padding: 4px;
       margin-top: 5px;
       background-color: #fff;
       border-radius: 10px;
-      border: 3px solid lightblue;
+      opacity: 0.85;
     }
     .gsc-control-cse {
       padding: 0;
@@ -67,6 +70,7 @@
     /* About section */
     #about{
       margin: auto;
+      margin-top: 20px;
     }
 
 
@@ -98,7 +102,8 @@
     /* Contact section and ICONS */
     #contact{
       margin: auto;
-      padding: 100px 0;      
+      padding: 100px 0;
+      margin-bottom: 20px;      
     }
 
     .contactIcons{

@@ -13,6 +13,7 @@ function Header() {
         <div 
        class="gcse-search" autofocus>
        </div>
+
         </div>
 
     </div>
