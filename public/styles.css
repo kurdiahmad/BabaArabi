@@ -50,6 +50,11 @@
       margin: auto;
     }
 
+     .gcse-search{
+      width: 10px;
+      border-radius: 10px;
+    }
+
      /* Navigation section and navBAR */
      nav{
       background-color: #8155BA ;
