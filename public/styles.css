@@ -39,7 +39,7 @@
 
     header h1{
       font-family: 'Almarai', sans-serif;
-      opacity: 0.9;
+      opacity: 0.95;
 
 
     }
@@ -61,7 +61,7 @@
       margin-top: 5px;
       background-color: #fff;
       border-radius: 10px;
-      opacity: 0.85;
+      opacity: 0.9;
     }
     .gsc-control-cse {
       padding: 0;
