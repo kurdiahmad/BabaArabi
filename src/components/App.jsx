@@ -13,14 +13,28 @@ function App() {
     <div>
         {/* <!-- Navigation--> */}
         <Navigation/>
-        {/* <!-- Header--> */}
-        <Header/>
+
+
+{/* <!-- Header--> */}
+<Header/>
+<div className="container1">
+
+<div className="container1-1">
         {/* <!-- About section--> */}
         <About/>
         {/* <!-- Services section--> JUST A WHITE GAP */}
         <Services/>
         {/* <!-- Contact section--> */}
         <Contact/>
+</div>
+<div className="container1-2">
+  <p>Google Ads here</p>
+  </div>
+
+        </div>
+        
+
+
         {/* <!-- Footer--> */}
         <Footer/>
     </div>

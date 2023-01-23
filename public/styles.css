@@ -26,6 +26,26 @@
       background: #fff;
     }
 
+    .container1{
+      width: 100%;
+      display: flex;
+    }
+
+    .container1-2{
+      width: 30%;
+      margin: 20px;
+      background-color: rgb(248, 249, 250);
+      text-align: center;
+      vertical-align: middle;
+      justify-content: center;
+        }
+
+    .container1-2 p {
+      position: relative;
+      height: auto;
+      top: 40%;
+    }
+
     /* This section isn't appearing for now */
     #services{
       padding: 10px 0;
