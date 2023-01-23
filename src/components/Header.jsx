@@ -11,12 +11,20 @@ function Header() {
 
         <div class="googleBox">
         <div 
-       class="gcse-search" autofocus>
+       class="gcse-search" autofocus="on">
        </div>
-
         </div>
 
     </div>
+
+    {/* <textarea id="searchterm"></textarea><button 
+onclick="search()">Search</button>
+<script>
+function search() {
+var Blah = document.getElementById("searchterm").value;
+location.replace("https://www.google.com/search?q=" + searchterm + "");
+}
+</script> */}
 </header>
   );
 }
