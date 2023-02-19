@@ -15,8 +15,8 @@ const Nav = ({ search, setSearch }) => {
             </form>
             <ul>
                 <li><Link to="post">إضافة مقال </Link></li>
-                <li><Link to="/">مقالات أكاديمية</Link></li>
-                <li><Link to="/">مقالات عامة</Link></li>
+                {/* <li><Link to="/">مقالات أكاديمية</Link></li> */}
+                <li><Link to="/">مقالاتنا</Link></li>
 
             </ul>
         </nav>
